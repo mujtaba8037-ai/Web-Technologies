@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COMSATS - Lab Task 1</title>
+    <style>
+        /* =========================================
+           CSS STYLING (Internal CSS in this file)
+           ========================================= */
+        
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 20px;
+        }
+
+        /* Main Table Styling (Layout) */
+        .main-table {
+            width: 800px; 
+            margin: 0 auto; 
+            border-collapse: collapse;
+            background-color: #a0e0a0; /* Light Green Background */
+        }
+
+        /* Header Styling */
+        .header {
+            font-size: 26px;
+            font-weight: bold;
+            color: #0000cc; /* Blue Text */
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Navigation Bar Styling */
+        .nav-bar {
+            background-color: #a0e0a0;
+            text-align: center;
+            padding: 10px;
+            border-top: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: #d4a017; /* Yellowish/Golden Text */
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .nav-bar a:hover {
+            color: #ffffff;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 30%;
+            vertical-align: top;
+            padding: 20px;
+            background-color: #a0e0a0;
+        }
+
+        .sidebar ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .sidebar li {
+            color: #cc0000; /* Dark Red Text */
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        /* Content Area Styling */
+        .content {
+            width: 70%;
+            vertical-align: top;
+            padding: 20px;
+            background-color: #a0e0a0;
+            font-size: 13px;
+            color: #000000;
+        }
+
+        .content p {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Links inside Content */
+        .content-link {
+            color: #0000cc; /* Blue Link */
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .go-top {
+            color: #cc0000; /* Red Link */
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .go-top:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Layout Table -->
+    <table class="main-table">
+        
+        <!-- Row 1: Header -->
+        <tr>
+            <td colspan="2" class="header">
+                COMSATS Institute of Information Technology
+            </td>
+        </tr>
+
+        <!-- Row 2: Navigation Bar -->
+        <tr>
+            <td colspan="2" class="nav-bar">
+                <a href="#">Home</a> &nbsp; &nbsp;
+                <a href="#">Departments</a> &nbsp; &nbsp;
+                <a href="#">Admissions</a> &nbsp; &nbsp;
+                <a href="#">Academics</a> &nbsp; &nbsp;
+                <a href="#">Exams</a>
+            </td>
+        </tr>
+
+        <!-- Row 3: Left Sidebar and Right Content Area -->
+        <tr>
+            <!-- Left Sidebar (List) -->
+            <td class="sidebar">
+                <ul>
+                    <li>Historical perspective</li>
+                    <li>Start</li>
+                    <li>Membership</li>
+                    <li>Centers of Excellence</li>
+                    <li>Field of Study</li>
+                    <li>Activities in Pakistan</li>
+                    <li>HR</li>
+                </ul>
+            </td>
+
+            <!-- Right Content Area -->
+            <td class="content">
+                <a href="#" class="content-link">Historical Perspective:</a>
+                <p>
+                    The Commission on Science and Technology for Sustainable Development in the South (COMSATS) is an international organization. It aims to reduce the ever-growing gap between the developed and developing world through useful applications of science and technology. The Third World Academy of Sciences (TWAS) initiated the proposal for the formation of COMSATS under the leadership of Nobel Laureate, Dr. Abdus Salam.
+                </p>
+                <a href="#" class="go-top">Go to top</a>
+                
+                <br><br>
+
+                <a href="#" class="content-link">Start:</a>
+                <p>
+                    The foundation-conference of COMSATS was held at Islamabad on 4th & 5th October 1994. Representatives from thirty-six countries attended. The participants included twenty-two Ministers, representatives of UNESCO, UNDP, UNIDO, and the World Bank.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

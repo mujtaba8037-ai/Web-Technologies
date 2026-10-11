@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS and Sign Up Form</title>
+
+    <style>
+        /* External CSS Example */
+
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: navy;
+            margin-left: 20px;
+            font-family: Verdana, sans-serif;
+            font-size: 50px;
+        }
+
+        #para1 {
+            text-align: center;
+            color: red;
+        }
+
+        .center {
+            text-align: center;
+            color: yellow;
+        }
+
+        /* DIV Example */
+
+        .box {
+            width: 100px;
+            padding: 15px;
+            margin: 5px;
+            color: white;
+        }
+
+        .first {
+            background-color: rgb(117, 183, 140);
+        }
+
+        .second {
+            background-color: red;
+        }
+
+        /* Sign Up Form */
+
+        .signup-form {
+            background-color: white;
+            border: 1px solid #ccc;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        button {
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            opacity: 0.9;
+            float: left;
+        }
+
+        button:hover {
+            opacity: 1;
+        }
+
+        .cancelbtn {
+            background-color: #f44336;
+        }
+
+        .signupbtn {
+            background-color: #04AA6D;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (max-width: 300px) {
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CSS Example -->
+
+    <h1>Hello World</h1>
+
+    <p id="para1">
+        This is a paragraph.
+    </p>
+
+    <p class="center">
+        This text is centered.
+    </p>
+
+
+    <!-- Using DIVs -->
+
+    <h2>Using DIVs</h2>
+
+    <div>
+        <div class="box first">
+            First
+        </div>
+
+        <div class="box second">
+            Second
+        </div>
+    </div>
+
+
+    <!-- Sign Up Form -->
+
+    <form class="signup-form" action="#">
+
+        <div class="container">
+
+            <h1>Sign Up</h1>
+
+            <p>
+                Please fill in this form to create an account.
+            </p>
+
+            <hr>
+
+            <label for="email">
+                <b>Email</b>
+            </label>
+
+            <input
+                type="text"
+                id="email"
+                placeholder="Enter Email"
+                name="email"
+                required
+            >
+
+            <label for="psw">
+                <b>Password</b>
+            </label>
+
+            <input
+                type="password"
+                id="psw"
+                placeholder="Enter Password"
+                name="psw"
+                required
+            >
+
+            <label for="psw-repeat">
+                <b>Repeat Password</b>
+            </label>
+
+            <input
+                type="password"
+                id="psw-repeat"
+                placeholder="Repeat Password"
+                name="psw-repeat"
+                required
+            >
+
+            <label>
+                <input
+                    type="checkbox"
+                    checked
+                    name="remember"
+                >
+                Remember me
+            </label>
+
+            <p>
+                By creating an account you agree to our
+                <a href="#" style="color:dodgerblue">
+                    Terms & Privacy
+                </a>.
+            </p>
+
+            <div class="clearfix">
+
+                <button type="button" class="cancelbtn">
+                    Cancel
+                </button>
+
+                <button type="submit" class="signupbtn">
+                    Sign Up
+                </button>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
